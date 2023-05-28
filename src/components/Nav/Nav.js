@@ -8,7 +8,7 @@ function Nav({isAuth, toggleIsAuth}) {
 
     const handleLogout = () => {
         toggleIsAuth(false);
-        navigate('/login')
+        navigate('/')
     };
 
 
@@ -23,14 +23,14 @@ function Nav({isAuth, toggleIsAuth}) {
                         <>
                             <li><NavLink to="./blogposts">Blogposts </NavLink></li>
                             <li>
-                                <button className='buttonUitloggen' type="button" onClick={handleLogout}>
+                                <button type="button" onClick={handleLogout}>
                                     Uitloggen
                                 </button>
                             </li>
                             </>
                          :
-                        <li><NavLink to="./login">Login </NavLink></li>
-                         }
+                    <li><NavLink to="/login">Login</NavLink></li>
+                        }
                 </ul>
             </div>
         </nav>

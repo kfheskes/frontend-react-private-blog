@@ -20,10 +20,10 @@ function App() {
 
     return (
         <>
-            <Nav auth={isAuth} toggleIsAuth={toggleIsAuth}/>
+            <Nav isAuth={isAuth} toggleIsAuth={toggleIsAuth}/>
             <Routes>
                 <Route path="/" element={<Home/>}/>
-                <Route path="/login" element={<Login toggleAuth={ toggleIsAuth}/>}/>
+                <Route path="/login" element={<Login toggleIsAuth={ toggleIsAuth}/>}/>
                 <Route path="/blogposts" element={isAuth ? <Blogposts /> : <Navigate to= "/login"/> }/>
                 <Route path="/blogposts/:id" element={isAuth ? <BlogpostsPage/> : <Navigate to="/login"/>} />
             </Routes>

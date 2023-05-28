@@ -4,7 +4,7 @@ import {useNavigate} from "react-router-dom";
 
 
 
-const Login = ({toggleIsAuth}) => {
+function Login({ toggleIsAuth }) {
 
     const navigate = useNavigate();
 
