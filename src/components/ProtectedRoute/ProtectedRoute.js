@@ -8,11 +8,6 @@
 //         return <Navigate to="/login" replace />
 //     }
 // }
-// //     return isAuth ? (
-// //         <Route path={path} element={element} />
-// //     ) : (
-// //         <Navigate to="/login" replace />
-// //     );
-// // };
+//
 //
 // export default ProtectedRoute;

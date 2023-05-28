@@ -16,9 +16,11 @@ function App() {
 
     const [isAuth, toggleIsAuth] = useState(false);
 
+
+
     return (
         <>
-            <Nav auth={isAuth} toggleAuth={toggleIsAuth}/>
+            <Nav auth={isAuth} toggleIsAuth={toggleIsAuth}/>
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/login" element={<Login toggleAuth={ toggleIsAuth}/>}/>
